@@ -1,0 +1,46 @@
+.header {
+	min-height: 100px;
+	background-color: #009999;
+	padding: 0px;
+	text-align: center;
+}
+/*Селектор псевдокласса (элемента)*/
+.header > h1:first-letter {
+ color: rgb(200, 200, 200);
+}
+
+/*Селектор дочернего класса*/
+.header > h1 {
+	font-family: Sans-Serif;
+	line-height: 100px;
+	margin: 0px;
+	color: white;
+}
+
+/*Селектор класса*/
+.content {
+	min-height: 400px;
+	padding-top: 50px;
+	margin: 0;
+}
+
+/*Селектор потомств*/
+.content ~ #left {
+	width: 50%;
+	float: left;
+}
+
+.content #right {
+	width: 50%;
+	float: right;
+}
+
+.content p, img, h3, h4, ul {
+	padding: 0px 30px 0 30px;
+}
+
+/*Селектор атрибута*/
+input[type="text"]:focus{   
+	border: 2px solid green;
+	text-indent: 5%;
+}
